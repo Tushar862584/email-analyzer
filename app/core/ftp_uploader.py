@@ -3,9 +3,14 @@ import paramiko
 import os
 from core.logger import setup_logger
 import yaml
+from pathlib import Path
 
 logger = setup_logger()
-CONFIG = yaml.safe_load(open("config/settings.yaml"))
+#CONFIG = yaml.safe_load(open("config/settings.yaml"))
+current_dir = Path(__file__).parent 
+config_path = current_dir.parent / "config" / "settings.yaml"
+with open(config_path, 'r') as f:
+        CONFIG = yaml.safe_load(f)
 
 def upload_to_ftp(local_path):
     transport = paramiko.Transport((CONFIG['ftp']['host'], CONFIG['ftp']['port']))

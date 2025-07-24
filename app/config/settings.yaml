@@ -8,7 +8,7 @@ ftp:
   host: "sftp.target.com"
   port: 22
   username: "ftpuser"
-  password: "ftppassword"
+  password: "secret"
   target_dir: "/upload"
 
 security:

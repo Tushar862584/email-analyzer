@@ -1,0 +1,12 @@
+2025-07-24 22:16:12,954 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-24 22:16:12,954 INFO:Scheduler started. Running every 60 minutes.
+2025-07-24 22:16:12,956 INFO:Added job "job" to job store "default"
+2025-07-24 22:16:12,956 INFO:Scheduler started
+2025-07-24 22:28:35,165 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-24 22:28:35,167 INFO:Scheduler started. Running every 60 minutes.
+2025-07-24 22:28:35,169 INFO:Added job "job" to job store "default"
+2025-07-24 22:28:35,169 INFO:Scheduler started
+2025-07-24 22:31:01,353 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-24 22:31:04,837 INFO:Scheduler started. Running every 60 minutes.
+2025-07-24 22:31:07,116 INFO:Added job "job" to job store "default"
+2025-07-24 22:31:07,118 INFO:Scheduler started

@@ -3,6 +3,7 @@ from imapclient import IMAPClient
 from email import message_from_bytes
 import os, tempfile, zipfile
 import yaml
+from pathlib import Path
 from ai.extractor import extract_data_from_file
 from core.normalizer import normalize_and_write_csv
 from core.ftp_uploader import upload_to_ftp
@@ -10,7 +11,11 @@ from core.logger import setup_logger
 
 logger = setup_logger()
 
-CONFIG = yaml.safe_load(open("config/settings.yaml"))
+#CONFIG = yaml.safe_load(open("config/settings.yaml"))
+current_dir = Path(__file__).parent 
+config_path = current_dir.parent / "config" / "settings.yaml"
+with open(config_path, 'r') as f:
+        CONFIG = yaml.safe_load(f)
 
 def process_emails():
     with IMAPClient(CONFIG['email']['server']) as server:
