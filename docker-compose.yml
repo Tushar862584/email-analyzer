@@ -1,11 +1,21 @@
+version: '3.8'
+
 services:
-  eliza:
-    build: .
-    container_name: eliza
-    env_file: .env
-    volumes:
-      - .:/app
-    working_dir: /app
-    command: python app/ui/main.py
+  ftp:
+    image: fauria/vsftpd
+    container_name: ftp_server
+    restart: unless-stopped
     ports:
-      - "5000:5000"
+      - "20:20"
+      - "21:21"
+      - "21100-21110:21100-21110"
+    env_file:
+      - .env
+    environment:
+      - PASV_ADDRESS=127.0.0.1
+      - PASV_MIN_PORT=21100
+      - PASV_MAX_PORT=21110
+      - FILE_OPEN_MODE=0666
+      - LOCAL_UMASK=022
+    volumes:
+      - ./ftpdata:/home/vsftpd

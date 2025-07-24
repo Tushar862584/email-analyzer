@@ -1,0 +1,9 @@
+transformers
+torch
+pytesseract
+flask
+paramiko
+python-dotenv
+PyYAML
+fitz
+Docker
