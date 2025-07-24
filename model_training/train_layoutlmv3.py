@@ -1,0 +1,1 @@
+# Training script placeholder for LayoutLMv3
