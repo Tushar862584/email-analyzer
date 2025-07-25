@@ -10,3 +10,376 @@
 2025-07-24 22:31:04,837 INFO:Scheduler started. Running every 60 minutes.
 2025-07-24 22:31:07,116 INFO:Added job "job" to job store "default"
 2025-07-24 22:31:07,118 INFO:Scheduler started
+2025-07-25 16:02:07,963 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 16:02:07,964 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 16:02:07,966 INFO:Added job "job" to job store "default"
+2025-07-25 16:02:07,966 INFO:Scheduler started
+2025-07-25 16:02:07,967 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 16:02:07 IST)" (scheduled at 2025-07-25 16:02:07.962045+05:30)
+2025-07-25 16:02:07,968 INFO:Starting Eliza email processing job...
+2025-07-25 16:02:15,962 ERROR:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:02:07 IST)" raised an exception
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 395, in login
+    rv = self._command_and_check(
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 1752, in _command_and_check
+    typ, data = meth(*args)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.12/imaplib.py", line 612, in login
+    raise self.error(dat[-1])
+imaplib.IMAP4.error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/apscheduler/executors/base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/app/main.py", line 11, in job
+    process_emails()
+  File "/home/tushar/Downloads/sem-5 project/app/core/email_handler.py", line 22, in process_emails
+    server.login(CONFIG['email']['username'], CONFIG['email']['password'])
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 402, in login
+    raise exceptions.LoginError(str(e))
+imapclient.exceptions.LoginError: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2025-07-25 16:02:19,410 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 16:02:19,411 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 16:02:19,413 INFO:Added job "job" to job store "default"
+2025-07-25 16:02:19,413 INFO:Scheduler started
+2025-07-25 16:02:19,414 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 16:02:19 IST)" (scheduled at 2025-07-25 16:02:19.409258+05:30)
+2025-07-25 16:02:19,415 INFO:Starting Eliza email processing job...
+2025-07-25 16:02:22,487 ERROR:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:02:19 IST)" raised an exception
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 395, in login
+    rv = self._command_and_check(
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 1752, in _command_and_check
+    typ, data = meth(*args)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.12/imaplib.py", line 612, in login
+    raise self.error(dat[-1])
+imaplib.IMAP4.error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/apscheduler/executors/base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/app/main.py", line 11, in job
+    process_emails()
+  File "/home/tushar/Downloads/sem-5 project/app/core/email_handler.py", line 22, in process_emails
+    server.login(CONFIG['email']['username'], CONFIG['email']['password'])
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 402, in login
+    raise exceptions.LoginError(str(e))
+imapclient.exceptions.LoginError: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2025-07-25 16:03:26,501 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 16:03:26,502 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 16:03:26,505 INFO:Added job "job" to job store "default"
+2025-07-25 16:03:26,505 INFO:Scheduler started
+2025-07-25 16:03:26,508 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 16:03:26 IST)" (scheduled at 2025-07-25 16:03:26.499623+05:30)
+2025-07-25 16:03:26,509 INFO:Starting Eliza email processing job...
+2025-07-25 16:03:38,916 ERROR:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:03:26 IST)" raised an exception
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 395, in login
+    rv = self._command_and_check(
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 1752, in _command_and_check
+    typ, data = meth(*args)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.12/imaplib.py", line 612, in login
+    raise self.error(dat[-1])
+imaplib.IMAP4.error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/apscheduler/executors/base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/app/main.py", line 11, in job
+    process_emails()
+  File "/home/tushar/Downloads/sem-5 project/app/core/email_handler.py", line 22, in process_emails
+    server.login(CONFIG['email']['username'], CONFIG['email']['password'])
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 402, in login
+    raise exceptions.LoginError(str(e))
+imapclient.exceptions.LoginError: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2025-07-25 16:04:12,268 INFO:started..
+2025-07-25 16:04:12,269 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 16:04:12,270 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 16:04:12,271 INFO:Added job "job" to job store "default"
+2025-07-25 16:04:12,271 INFO:Scheduler started
+2025-07-25 16:04:12,273 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 16:04:12 IST)" (scheduled at 2025-07-25 16:04:12.268529+05:30)
+2025-07-25 16:04:12,273 INFO:Starting Eliza email processing job...
+2025-07-25 16:04:15,221 ERROR:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:04:12 IST)" raised an exception
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 395, in login
+    rv = self._command_and_check(
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 1752, in _command_and_check
+    typ, data = meth(*args)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.12/imaplib.py", line 612, in login
+    raise self.error(dat[-1])
+imaplib.IMAP4.error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/apscheduler/executors/base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/app/main.py", line 11, in job
+    process_emails()
+  File "/home/tushar/Downloads/sem-5 project/app/core/email_handler.py", line 22, in process_emails
+    server.login(CONFIG['email']['username'], CONFIG['email']['password'])
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 402, in login
+    raise exceptions.LoginError(str(e))
+imapclient.exceptions.LoginError: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2025-07-25 16:06:39,133 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 16:06:39,134 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 16:06:39,136 INFO:Added job "job" to job store "default"
+2025-07-25 16:06:39,136 INFO:Scheduler started
+2025-07-25 16:06:39,138 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 16:06:39 IST)" (scheduled at 2025-07-25 16:06:39.132159+05:30)
+2025-07-25 16:06:39,139 INFO:Starting Eliza email processing job...
+2025-07-25 16:06:52,419 ERROR:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:06:39 IST)" raised an exception
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 395, in login
+    rv = self._command_and_check(
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 1752, in _command_and_check
+    typ, data = meth(*args)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.12/imaplib.py", line 612, in login
+    raise self.error(dat[-1])
+imaplib.IMAP4.error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/apscheduler/executors/base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/app/main.py", line 11, in job
+    process_emails()
+  File "/home/tushar/Downloads/sem-5 project/app/core/email_handler.py", line 22, in process_emails
+    server.login(CONFIG['email']['username'], CONFIG['email']['password'])
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 402, in login
+    raise exceptions.LoginError(str(e))
+imapclient.exceptions.LoginError: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2025-07-25 16:23:36,765 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 16:23:36,765 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 16:23:36,767 INFO:Added job "job" to job store "default"
+2025-07-25 16:23:36,767 INFO:Scheduler started
+2025-07-25 16:23:36,768 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 16:23:36 IST)" (scheduled at 2025-07-25 16:23:36.763959+05:30)
+2025-07-25 16:23:36,769 INFO:Starting Eliza email processing job...
+2025-07-25 16:23:39,429 ERROR:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:23:36 IST)" raised an exception
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 395, in login
+    rv = self._command_and_check(
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 1752, in _command_and_check
+    typ, data = meth(*args)
+                ^^^^^^^^^^^
+  File "/usr/lib/python3.12/imaplib.py", line 612, in login
+    raise self.error(dat[-1])
+imaplib.IMAP4.error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/apscheduler/executors/base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/app/main.py", line 11, in job
+    process_emails()
+  File "/home/tushar/Downloads/sem-5 project/app/core/email_handler.py", line 22, in process_emails
+    server.login(CONFIG['email']['username'], CONFIG['email']['password'])
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/imapclient/imapclient.py", line 402, in login
+    raise exceptions.LoginError(str(e))
+imapclient.exceptions.LoginError: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2025-07-25 16:26:15,575 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 16:26:15,575 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 16:26:15,577 INFO:Added job "job" to job store "default"
+2025-07-25 16:26:15,577 INFO:Scheduler started
+2025-07-25 16:26:15,578 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 16:26:15 IST)" (scheduled at 2025-07-25 16:26:15.573959+05:30)
+2025-07-25 16:26:15,578 INFO:Starting Eliza email processing job...
+2025-07-25 16:26:26,353 ERROR:Error extracting data: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-07-25 16:26:28,894 INFO:Eliza job completed.
+2025-07-25 16:26:28,895 INFO:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:26:15 IST)" executed successfully
+2025-07-25 16:29:44,172 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 16:29:44,173 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 16:29:44,175 INFO:Added job "job" to job store "default"
+2025-07-25 16:29:44,175 INFO:Scheduler started
+2025-07-25 16:29:44,177 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 16:29:44 IST)" (scheduled at 2025-07-25 16:29:44.170920+05:30)
+2025-07-25 16:29:44,177 INFO:Starting Eliza email processing job...
+2025-07-25 16:29:57,680 INFO:Eliza job completed.
+2025-07-25 16:29:57,682 INFO:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:29:44 IST)" executed successfully
+2025-07-25 16:55:37,030 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 16:55:37,035 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 16:55:37,040 INFO:Added job "job" to job store "default"
+2025-07-25 16:55:37,040 INFO:Scheduler started
+2025-07-25 16:55:37,042 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 16:55:37 IST)" (scheduled at 2025-07-25 16:55:37.026757+05:30)
+2025-07-25 16:55:37,043 INFO:Starting Eliza email processing job...
+2025-07-25 16:55:45,631 INFO:Eliza job completed.
+2025-07-25 16:55:45,633 INFO:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:55:37 IST)" executed successfully
+2025-07-25 17:00:43,393 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 17:00:43,394 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 17:00:43,396 INFO:Added job "job" to job store "default"
+2025-07-25 17:00:43,397 INFO:Scheduler started
+2025-07-25 17:00:43,398 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:00:43 IST)" (scheduled at 2025-07-25 17:00:43.391576+05:30)
+2025-07-25 17:00:43,399 INFO:Starting Eliza email processing job...
+2025-07-25 17:00:48,531 ERROR:Error extracting data: (1, 'Error in findFileFormatStream: truncated file Error during processing.')
+2025-07-25 17:00:49,326 INFO:Eliza job completed.
+2025-07-25 17:00:49,328 INFO:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 18:00:43 IST)" executed successfully
+2025-07-25 17:04:04,436 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 17:04:04,436 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 17:04:04,439 INFO:Added job "job" to job store "default"
+2025-07-25 17:04:04,440 INFO:Scheduler started
+2025-07-25 17:04:04,444 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:04:04 IST)" (scheduled at 2025-07-25 17:04:04.434855+05:30)
+2025-07-25 17:04:04,448 INFO:Starting Eliza email processing job...
+2025-07-25 17:04:07,811 INFO:Successfully connected to email server and selected folder 'INBOX'.
+2025-07-25 17:04:08,460 INFO:Found 0 unread emails.
+2025-07-25 17:04:08,937 INFO:Eliza job completed.
+2025-07-25 17:04:08,939 INFO:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 18:04:04 IST)" executed successfully
+2025-07-25 17:08:02,356 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 17:08:02,357 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 17:08:02,360 INFO:Added job "job" to job store "default"
+2025-07-25 17:08:02,361 INFO:Scheduler started
+2025-07-25 17:08:02,363 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:08:02 IST)" (scheduled at 2025-07-25 17:08:02.354737+05:30)
+2025-07-25 17:08:02,364 INFO:Starting Eliza email processing job...
+2025-07-25 17:08:20,370 INFO:Successfully connected to email server and selected folder 'INBOX'.
+2025-07-25 17:08:20,880 INFO:Found 1 unread emails.
+2025-07-25 17:08:21,727 INFO:Attachment 'invoice_structured_INV-20250723.pdf' saved, now processing.
+2025-07-25 17:08:21,727 INFO:Processing file: invoice_structured_INV-20250723.pdf at path: /tmp/tmphq4zfxm_
+2025-07-25 17:08:22,522 ERROR:Error extracting data: (1, 'Error in pixReadStream: Pdf reading is not supported Error in pixRead: pix not read Error during processing.')
+2025-07-25 17:08:22,522 WARNING:No data was extracted from invoice_structured_INV-20250723.pdf.
+2025-07-25 17:08:22,523 INFO:Cleaned up temp file: /tmp/tmphq4zfxm_
+2025-07-25 17:08:23,038 INFO:Eliza job completed.
+2025-07-25 17:08:23,041 INFO:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 18:08:02 IST)" executed successfully
+2025-07-25 17:12:25,575 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 17:12:25,576 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 17:12:25,582 INFO:Added job "job" to job store "default"
+2025-07-25 17:12:25,583 INFO:Scheduler started
+2025-07-25 17:12:25,588 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:12:25 IST)" (scheduled at 2025-07-25 17:12:25.572853+05:30)
+2025-07-25 17:12:25,588 INFO:Starting Eliza email processing job...
+2025-07-25 17:12:39,042 INFO:Successfully connected to email server and selected folder 'INBOX'.
+2025-07-25 17:12:40,065 INFO:Found 1 unread emails.
+2025-07-25 17:12:40,913 INFO:Attachment 'invoice_structured_INV-20250723.pdf' saved, now processing.
+2025-07-25 17:12:40,913 INFO:Processing file: invoice_structured_INV-20250723.pdf at path: /tmp/tmpqegnd3sp
+2025-07-25 17:12:40,915 INFO:Cleaned up temp file: /tmp/tmpqegnd3sp
+2025-07-25 17:12:41,505 ERROR:An error occurred in process_emails: extract_data_from_file() missing 1 required positional argument: 'original_filename'
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/app/core/email_handler.py", line 53, in process_emails
+    process_file(temp_filepath, filename)
+  File "/home/tushar/Downloads/sem-5 project/app/core/email_handler.py", line 92, in process_file
+    extracted_data = extract_data_from_file(file_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: extract_data_from_file() missing 1 required positional argument: 'original_filename'
+2025-07-25 17:12:41,529 INFO:Eliza job completed.
+2025-07-25 17:12:41,531 INFO:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 18:12:25 IST)" executed successfully
+2025-07-25 17:16:11,154 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 17:16:11,154 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 17:16:11,156 INFO:Added job "job" to job store "default"
+2025-07-25 17:16:11,157 INFO:Scheduler started
+2025-07-25 17:16:11,158 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:16:11 IST)" (scheduled at 2025-07-25 17:16:11.152384+05:30)
+2025-07-25 17:16:11,159 INFO:Starting Eliza email processing job...
+2025-07-25 17:16:24,839 INFO:Successfully connected to email server and selected folder 'INBOX'.
+2025-07-25 17:16:25,555 INFO:Found 1 unread emails.
+2025-07-25 17:16:26,389 INFO:Attachment 'sample_invoice.pdf' saved, now processing.
+2025-07-25 17:16:26,390 INFO:Processing file: sample_invoice.pdf at path: /tmp/tmp5u8_8sem
+2025-07-25 17:16:26,449 INFO:Successfully extracted data from sample_invoice.pdf.
+2025-07-25 17:16:26,450 INFO:CSV file written: ./output/advice_2025-07-25T17:16:26.449974.csv
+2025-07-25 17:16:26,684 INFO:Connected (version 2.0, client OpenSSH_9.6p1)
+2025-07-25 17:16:26,836 INFO:Authentication (password) successful!
+2025-07-25 17:16:27,480 INFO:[chan 0] Opened sftp connection (server version 3)
+2025-07-25 17:16:27,486 INFO:Cleaned up temp file: /tmp/tmp5u8_8sem
+2025-07-25 17:16:28,132 ERROR:An error occurred in process_emails: [Errno 2] No such file
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/app/core/email_handler.py", line 53, in process_emails
+    process_file(temp_filepath, filename)
+  File "/home/tushar/Downloads/sem-5 project/app/core/email_handler.py", line 98, in process_file
+    upload_to_ftp(csv_path)
+  File "/home/tushar/Downloads/sem-5 project/app/core/ftp_uploader.py", line 20, in upload_to_ftp
+    sftp.put(local_path, remote_path)
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/paramiko/sftp_client.py", line 759, in put
+    return self.putfo(fl, remotepath, file_size, callback, confirm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/paramiko/sftp_client.py", line 714, in putfo
+    with self.file(remotepath, "wb") as fr:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/paramiko/sftp_client.py", line 372, in open
+    t, msg = self._request(CMD_OPEN, filename, imode, attrblock)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/paramiko/sftp_client.py", line 857, in _request
+    return self._read_response(num)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/paramiko/sftp_client.py", line 909, in _read_response
+    self._convert_status(msg)
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/paramiko/sftp_client.py", line 938, in _convert_status
+    raise IOError(errno.ENOENT, text)
+FileNotFoundError: [Errno 2] No such file
+2025-07-25 17:16:28,153 INFO:Eliza job completed.
+2025-07-25 17:16:28,156 INFO:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 18:16:11 IST)" executed successfully
+2025-07-25 17:21:18,542 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 17:21:18,542 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 17:21:18,544 INFO:Added job "job" to job store "default"
+2025-07-25 17:21:18,545 INFO:Scheduler started
+2025-07-25 17:21:18,546 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:21:18 IST)" (scheduled at 2025-07-25 17:21:18.541215+05:30)
+2025-07-25 17:21:18,546 INFO:Starting Eliza email processing job...
+2025-07-25 17:21:27,128 INFO:Successfully connected to email server and selected folder 'INBOX'.
+2025-07-25 17:21:27,742 INFO:Found 1 unread emails.
+2025-07-25 17:21:28,776 INFO:Attachment 'invoice_structured_INV-20250723.pdf' saved, now processing.
+2025-07-25 17:21:28,776 INFO:Processing file: invoice_structured_INV-20250723.pdf at path: /tmp/tmpuslx3xqw
+2025-07-25 17:21:28,797 INFO:Successfully extracted data from invoice_structured_INV-20250723.pdf.
+2025-07-25 17:21:28,799 INFO:CSV file written: ./output/advice_2025-07-25T17:21:28.798319.csv
+2025-07-25 17:21:28,869 INFO:Connected (version 2.0, client OpenSSH_9.6p1)
+2025-07-25 17:21:29,077 INFO:Authentication (password) successful!
+2025-07-25 17:21:29,800 INFO:[chan 0] Opened sftp connection (server version 3)
+2025-07-25 17:21:29,808 INFO:Cleaned up temp file: /tmp/tmpuslx3xqw
+2025-07-25 17:21:30,236 ERROR:An error occurred in process_emails: [Errno 2] No such file
+Traceback (most recent call last):
+  File "/home/tushar/Downloads/sem-5 project/app/core/email_handler.py", line 53, in process_emails
+    process_file(temp_filepath, filename)
+  File "/home/tushar/Downloads/sem-5 project/app/core/email_handler.py", line 98, in process_file
+    upload_to_ftp(csv_path)
+  File "/home/tushar/Downloads/sem-5 project/app/core/ftp_uploader.py", line 20, in upload_to_ftp
+    sftp.put(local_path, remote_path)
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/paramiko/sftp_client.py", line 759, in put
+    return self.putfo(fl, remotepath, file_size, callback, confirm)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/paramiko/sftp_client.py", line 714, in putfo
+    with self.file(remotepath, "wb") as fr:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/paramiko/sftp_client.py", line 372, in open
+    t, msg = self._request(CMD_OPEN, filename, imode, attrblock)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/paramiko/sftp_client.py", line 857, in _request
+    return self._read_response(num)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/paramiko/sftp_client.py", line 909, in _read_response
+    self._convert_status(msg)
+  File "/home/tushar/Downloads/sem-5 project/.venv/lib/python3.12/site-packages/paramiko/sftp_client.py", line 938, in _convert_status
+    raise IOError(errno.ENOENT, text)
+FileNotFoundError: [Errno 2] No such file
+2025-07-25 17:21:30,247 INFO:Eliza job completed.
+2025-07-25 17:21:30,248 INFO:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 18:21:18 IST)" executed successfully
+2025-07-25 17:25:17,004 INFO:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-25 17:25:17,004 INFO:Scheduler started. First run is immediate, then every 60 minutes.
+2025-07-25 17:25:17,007 INFO:Added job "job" to job store "default"
+2025-07-25 17:25:17,008 INFO:Scheduler started
+2025-07-25 17:25:17,009 INFO:Running job "job (trigger: interval[1:00:00], next run at: 2025-07-25 17:25:17 IST)" (scheduled at 2025-07-25 17:25:17.001825+05:30)
+2025-07-25 17:25:17,010 INFO:Starting Eliza email processing job...
+2025-07-25 17:25:20,294 INFO:Successfully connected to email server and selected folder 'INBOX'.
+2025-07-25 17:25:20,908 INFO:Found 1 unread emails.
+2025-07-25 17:25:21,915 INFO:Attachment 'invoice_structured_INV-20250723.pdf' saved, now processing.
+2025-07-25 17:25:21,916 INFO:Processing file: invoice_structured_INV-20250723.pdf at path: /tmp/tmppiys7e9r
+2025-07-25 17:25:21,936 INFO:Successfully extracted data from invoice_structured_INV-20250723.pdf.
+2025-07-25 17:25:21,937 INFO:CSV file written: ./output/advice_2025-07-25T17:25:21.936741.csv
+2025-07-25 17:25:21,985 INFO:Connected (version 2.0, client OpenSSH_9.6p1)
+2025-07-25 17:25:22,217 INFO:Authentication (password) successful!
+2025-07-25 17:25:22,754 INFO:[chan 0] Opened sftp connection (server version 3)
+2025-07-25 17:25:22,763 INFO:File uploaded to FTP: /home/tushar/uploads/advice_2025-07-25T17:25:21.936741.csv
+2025-07-25 17:25:22,764 INFO:[chan 0] sftp session closed.
+2025-07-25 17:25:22,766 INFO:Cleaned up temp file: /tmp/tmppiys7e9r
+2025-07-25 17:25:23,194 INFO:Eliza job completed.
+2025-07-25 17:25:23,196 INFO:Job "job (trigger: interval[1:00:00], next run at: 2025-07-25 18:25:17 IST)" executed successfully

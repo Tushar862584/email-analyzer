@@ -1,8 +1,8 @@
-# Main entry point
-print('Eliza AI automation starting...')
+# In main.py
+from apscheduler.schedulers.blocking import BlockingScheduler
+from datetime import datetime # <-- Add this import
 from core.email_handler import process_emails
 from core.logger import setup_logger
-from apscheduler.schedulers.blocking import BlockingScheduler
 
 logger = setup_logger()
 
@@ -13,6 +13,9 @@ def job():
 
 if __name__ == "__main__":
     scheduler = BlockingScheduler()
-    scheduler.add_job(job, 'interval', minutes=60)
-    logger.info("Scheduler started. Running every 60 minutes.")
+    
+    # Add next_run_time to run the job once at startup
+    scheduler.add_job(job, 'interval', minutes=60, next_run_time=datetime.now())
+    
+    logger.info("Scheduler started. First run is immediate, then every 60 minutes.")
     scheduler.start()

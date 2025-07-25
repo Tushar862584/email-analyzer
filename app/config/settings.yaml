@@ -1,15 +1,15 @@
 email:
   server: "imap.gmail.com"
   username: "projecttester454@gmail.com"
-  password: "Project123"
+  password: "woru fqlr xuaa vrbf"
   folder: "INBOX"
 
 ftp:
-  host: "sftp.target.com"
+  host: "127.0.0.1"
   port: 22
-  username: "ftpuser"
-  password: "secret"
-  target_dir: "/upload"
+  username: "tushar" # Use your actual Linux username
+  password: "" #enter password
+  target_dir: "/home/tushar/uploads" # Use the full path to your new folder
 
 security:
   passwords:
